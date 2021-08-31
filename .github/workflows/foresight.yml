@@ -37,4 +37,4 @@ jobs:
         with:
           apikey: ${{ secrets.THUNDRA_APIKEY }}
           project_id: ${{ secrets.PROJECT_ID }}
-          command: mvn -DrunITs clean install
+          command: mvn -DrunITs -fn clean install
