@@ -34,6 +34,7 @@ jobs:
         uses: thundra-io/thundra-maven-test-action@v1
         env:
           THUNDRA_AGENT_REPORT_REST_BASEURL: https://collector.thundra.us/v1
+          THUNDRA_AGENT_DEBUG_ENABLE: true
         with:
           apikey: ${{ secrets.THUNDRA_APIKEY }}
           project_id: ${{ secrets.PROJECT_ID }}
